@@ -4,7 +4,7 @@ public class Principal {
 
     public static void main(String[] args) {
         int num = 2;
-        System.out.println("\nEjercicio #5: La lista de los números impares del 1 al 100, con ambos incluidos es: \n");
+        System.out.println("\nEjercicio #5: (Ciclo while) La lista de los números impares del 1 al 100, con ambos incluidos es: ");
         System.out.print("1" + " ");
         while (num < 100) {
             if(num %2 != 0) {
