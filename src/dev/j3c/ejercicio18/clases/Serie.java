@@ -1,4 +1,4 @@
-package dev.j3c.ejercicio18.interfaces.clases;
+package dev.j3c.ejercicio18.clases;
 
 import dev.j3c.ejercicio18.interfaces.Entregable;
 
