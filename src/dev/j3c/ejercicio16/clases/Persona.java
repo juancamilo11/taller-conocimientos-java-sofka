@@ -62,8 +62,6 @@ public class Persona {
         return(String.valueOf(numRandom) + this.getLetraDNI(numMod23));
     }
 
-
-
     private void generarDNI(){
         int numRandom;
         do {
