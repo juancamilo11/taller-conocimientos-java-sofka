@@ -30,7 +30,7 @@ public class Principal {
         return resultado;
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         double primerNumero = Principal.ingresarNumero();
         double segundoNumero = Principal.ingresarNumero();
         JOptionPane.showMessageDialog(null, Principal.compararNumerosIngresados(primerNumero, segundoNumero));

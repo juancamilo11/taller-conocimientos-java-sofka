@@ -23,7 +23,7 @@ public class Principal {
         return (Math.PI * Math.pow(radio,2));
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         double radio = Principal.ingresarRadio();
         JOptionPane.showMessageDialog(null, "El área del círculo es: " + Principal.calcularArea(radio) + " m^2");
     }

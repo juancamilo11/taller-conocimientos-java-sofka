@@ -14,7 +14,7 @@ public class Principal {
         return fraseSinEspacios;
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         String frase = Principal.ingresarFrase();
         if(frase.length() > 0) {
             System.out.println("\nEjercicio #10: La oración ingresada: " + frase + ", ahora sin espacios es: " + Principal.eliminarEspacios(frase));

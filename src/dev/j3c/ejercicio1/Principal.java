@@ -15,7 +15,7 @@ public class Principal {
         return result;
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         double primerNumero = 10.4,
                 segundoNumero = -3.23;
         JOptionPane.showMessageDialog(null, Principal.compararNumeros(primerNumero, segundoNumero));

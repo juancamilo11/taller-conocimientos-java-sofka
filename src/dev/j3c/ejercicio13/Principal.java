@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Principal {
 
-    public static void main(String[] args) {
+    public static void main() {
         String patronFecha = "yyyy/MM/dd HH:mm:ss";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(patronFecha);
         String fechaActual = simpleDateFormat.format(new Date());

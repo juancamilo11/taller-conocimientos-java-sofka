@@ -24,7 +24,7 @@ public class Principal {
         } while(opcElegida != '8');
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         Principal.mostrarMenu();
     }
 }

@@ -26,7 +26,7 @@ public class Principal {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         String primeraPalabra = Principal.ingresarPalabra();
         String segundaPalabra = Principal.ingresarPalabra();
         if(primeraPalabra.length() > 0 && segundaPalabra.length() > 0) {

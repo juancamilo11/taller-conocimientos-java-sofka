@@ -9,7 +9,7 @@ public class Principal {
         char opcElegida ='0';
         do {
             try {
-                opcElegida = JOptionPane.showInputDialog("****** Menú Principal ********\n" +
+                opcElegida = JOptionPane.showInputDialog(null,"****** Menú Principal ********\n" +
                         "\ta. Ejercicio 1: Comparar dos números (Constantes).\n" +
                         "\tb. Ejercicio 2: Comparar dos números ingresados por teclado.\n" +
                         "\tc. Ejercicio 3: Calcular área de un círculo ingresado por teclado.\n" +
@@ -28,8 +28,7 @@ public class Principal {
                         "\tp. Ejercicio 16: Ejercicio con la clase Persona.\n" +
                         "\tq. Ejercicio 17: Ejercicio con las clases Electrodomestico, Nevera y Televisor.\n" +
                         "\tr. Ejercicio 18: Ejercicio con las clases Serie y Videojuego.\n" +
-                        "\ts. Salir.").charAt(0);
-
+                        "\ts. Salir.","Taller de Conocimientos Java - Juan Camilo Cardona Calderón",1).charAt(0);
             }catch(Exception e) {
                 JOptionPane.showMessageDialog(null, "Excepción atrapada: " + e.getMessage());
             }
@@ -38,7 +37,38 @@ public class Principal {
         return opcElegida;
     }
 
-    public static void main(String[] args) {
-
+    private static void ejecutarOpcion(char opcElegida) {
+        switch (opcElegida) {
+            case 'a': dev.j3c.ejercicio1.Principal.main(); break;
+            case 'b': dev.j3c.ejercicio2.Principal.main(); break;
+            case 'c': dev.j3c.ejercicio3.Principal.main(); break;
+            case 'd': dev.j3c.ejercicio4.Principal.main(); break;
+            case 'e': dev.j3c.ejercicio5.Principal.main(); break;
+            case 'f': dev.j3c.ejercicio6.Principal.main(); break;
+            case 'g': dev.j3c.ejercicio7.Principal.main(); break;
+            case 'h': dev.j3c.ejercicio8.Principal.main(); break;
+            case 'i': dev.j3c.ejercicio9.Principal.main(); break;
+            case 'j': dev.j3c.ejercicio10.Principal.main(); break;
+            case 'k': dev.j3c.ejercicio11.Principal.main(); break;
+            case 'l': dev.j3c.ejercicio12.Principal.main(); break;
+            case 'm': dev.j3c.ejercicio13.Principal.main(); break;
+            case 'n': dev.j3c.ejercicio14.Principal.main(); break;
+            case 'o': dev.j3c.ejercicio15.Principal.main(); break;
+            case 'p': dev.j3c.ejercicio16.Principal.main(); break;
+            case 'q': dev.j3c.ejercicio17.Principal.main(); break;
+            case 'r': dev.j3c.ejercicio18.Principal.main(); break;
+            default: break;
+        }
     }
+    
+    public static void main(String[] args) {
+        char opcElegida;
+        do {
+            opcElegida = Principal.mostrarMenu();
+            Principal.ejecutarOpcion(opcElegida);
+        } while(opcElegida != 's');
+        JOptionPane.showMessageDialog(null,"Ha decidido finalizar la ejecución del programa, hasta luego.");
+    }
+
+    
 }

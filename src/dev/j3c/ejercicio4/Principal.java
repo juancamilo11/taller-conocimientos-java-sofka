@@ -23,7 +23,7 @@ public class Principal {
         return (precio + (precio * 0.21));
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         double precio = Principal.ingresarPrecio();
         JOptionPane.showMessageDialog(null, "El precio final al sumarle el IVA es: $" + Principal.calcularPrecioFinal(precio));
     }

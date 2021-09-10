@@ -42,7 +42,7 @@ public class Principal {
                 numVideojuegosEntregados++;
             }
         }
-        System.out.println("\nEjercicio #18: Se han devuelto " + numVideojuegosEntregados + " videojuegos que se habían entregado anteriormente.");
+        System.out.println("\nSe han devuelto " + numVideojuegosEntregados + " videojuegos que se habían entregado anteriormente.");
     }
 
     private static void contarYDevolverSeries(Serie[] vecSeries) {
@@ -66,7 +66,7 @@ public class Principal {
         System.out.println("El videojuego con más horas estimadas es: " + vecVideojuegos[0]);
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         Serie[] vecSeries = new Serie[5];
         Videojuego[] vecVideojuegos = new Videojuego[5];
 

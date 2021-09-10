@@ -32,7 +32,7 @@ public class Principal {
                 + precioLavadoras + " para lavadoras y " + precioTelevisores + " para televisores.");
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         Electrodomestico[] vecElectrodomesticos = new Electrodomestico[10];
         Principal.llenarArreglo(vecElectrodomesticos);
         Principal.imprimirElectrodomesticos(vecElectrodomesticos);

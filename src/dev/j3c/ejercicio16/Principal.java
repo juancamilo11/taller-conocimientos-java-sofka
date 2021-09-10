@@ -30,7 +30,7 @@ public class Principal {
         System.out.println("La persona es " + ((persona.esMayorDeEdad())? "Mayor de edad" : "Menor de edad") + "\n");
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         String nombre = Utilidades.ingresarNombre();
         int edad = Utilidades.ingresarEdad();
         char genero = Utilidades.ingresarGenero();

@@ -26,7 +26,7 @@ public class Principal {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         Integer numero = Principal.ingresarNumero();
         if(numero < 1000) {
             Principal.imprimirNumeros(numero);

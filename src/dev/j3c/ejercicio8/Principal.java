@@ -24,7 +24,7 @@ public class Principal {
         return mensaje;
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         String diaDeLaSemana = Principal.ingresarDiaDeLaSemana();
         System.out.println("\nEjercicio #8: " + Principal.getTipoDeDia(diaDeLaSemana));
     }

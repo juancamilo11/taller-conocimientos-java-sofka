@@ -19,7 +19,7 @@ public class Principal {
         return conteo;
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         String frase = Principal.ingresarOracion();
         if(frase.length() > 0) {
             System.out.println("\nEjercicio #11: La longitud de la cadena es, incluyendo los espacios es: " + frase.length());
