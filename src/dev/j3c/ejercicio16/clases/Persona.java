@@ -1,5 +1,7 @@
 package dev.j3c.ejercicio16.clases;
 
+import dev.j3c.ejercicio16.enums.ELetrasDNI;
+
 public class Persona {
 
     private String nombre;
@@ -53,13 +55,13 @@ public class Persona {
         return (String.valueOf(randomDNI).length() == 8) ? true : false;
     }
 
-    private String getLetraDNI(int numMod23) {
-        return null;
+    private char getLetraDNI(int numMod23) {
+        return ELetrasDNI.getLetraConNumero(numMod23);
     }
 
     private String generarDNICompleto(int numRandom){
         int numMod23 = numRandom % 23;
-        return(String.valueOf(numRandom) + this.getLetraDNI(numMod23));
+        return numRandom + String.valueOf(this.getLetraDNI(numMod23));
     }
 
     private void generarDNI(){

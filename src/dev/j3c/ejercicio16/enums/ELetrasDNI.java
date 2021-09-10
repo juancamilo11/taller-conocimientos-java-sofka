@@ -25,7 +25,7 @@ public enum ELetrasDNI {
         return this.letra;
     }
 
-    public char getLetraConNumero(int numero) {
+    public static char getLetraConNumero(int numero) {
         ELetrasDNI[] vecLetrasDNI = ELetrasDNI.values();
         char letraRetorno = ' ';
         for (int i = 0 ; i < vecLetrasDNI.length ; i++) {
