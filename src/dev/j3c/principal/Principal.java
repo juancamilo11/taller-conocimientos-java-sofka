@@ -9,7 +9,7 @@ public class Principal {
         char opcElegida ='0';
         do {
             try {
-                opcElegida = JOptionPane.showInputDialog(null,"****** Menú Principal ********\n" +
+                opcElegida = JOptionPane.showInputDialog(null,"****************************** MENU PRINCIPAL ******************************\n" +
                         "\ta. Ejercicio 1: Comparar dos números (Constantes).\n" +
                         "\tb. Ejercicio 2: Comparar dos números ingresados por teclado.\n" +
                         "\tc. Ejercicio 3: Calcular área de un círculo ingresado por teclado.\n" +
@@ -69,6 +69,4 @@ public class Principal {
         } while(opcElegida != 's');
         JOptionPane.showMessageDialog(null,"Ha decidido finalizar la ejecución del programa, hasta luego.");
     }
-
-    
 }
