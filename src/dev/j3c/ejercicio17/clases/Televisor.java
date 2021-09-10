@@ -1,4 +1,4 @@
-package dev.j3c.practice17.clases;
+package dev.j3c.ejercicio17.clases;
 
 public class Televisor extends Electrodomestico{
 
