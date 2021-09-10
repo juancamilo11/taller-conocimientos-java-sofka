@@ -1,4 +1,4 @@
-package dev.j3c.practice17.enums;
+package dev.j3c.ejercicio17.enums;
 
 public enum EPreciosConsEnerg {
     precioTipoA('A',100),
@@ -11,7 +11,7 @@ public enum EPreciosConsEnerg {
     private double precioAsociado;
     private char letra;
 
-    EPreciosConsEnerg(char letra,double precioAsociado) {
+    EPreciosConsEnerg(char letra, double precioAsociado) {
         this.letra = letra;
         this.precioAsociado = precioAsociado;
     }
