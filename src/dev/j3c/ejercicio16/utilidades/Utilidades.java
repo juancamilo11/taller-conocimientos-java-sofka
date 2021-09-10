@@ -8,7 +8,7 @@ public class Utilidades {
     public static String ingresarNombre() {
         String nombre;
         do{
-            nombre = JOptionPane.showInputDialog("Ingrese el nombre: ");
+            nombre = JOptionPane.showInputDialog("Ingrese el nombre: ").trim();
         } while(nombre == null || nombre.length() == 0);
         return nombre;
     }
