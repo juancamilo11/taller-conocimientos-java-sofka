@@ -3,7 +3,7 @@ package dev.j3c.ejercicio16.utilidades;
 import javax.swing.*;
 import java.util.InputMismatchException;
 
-public class utilidades {
+public class Utilidades {
 
     public static String ingresarNombre() {
         String nombre;
